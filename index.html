@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Tech - Welcome To Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Hi Tech</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                <li><a href="#message" class="nav-link">Message Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="welcome-message">Hi Name, Welcome To Website</h1>
+            <p>Your trusted technology partner for innovative solutions</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+   
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Company</h2>
+            <p class="company-mission">
+                Hi Tech is a leading technology company dedicated to providing innovative solutions 
+                that drive digital transformation. Our mission is to empower businesses with 
+                cutting-edge technology solutions that enhance productivity, efficiency, and growth. 
+                We believe in creating sustainable value through innovation, collaboration, and excellence.
+            </p>
+            <div class="about-features">
+                <div class="feature">
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge technology solutions</p>
+                </div>
+                <div class="feature">
+                    <h3>Excellence</h3>
+                    <p>Quality service and support</p>
+                </div>
+                <div class="feature">
+                    <h3>Partnership</h3>
+                    <p>Building lasting relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Profile Section -->
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="company-info">
+                    <h3>Company Overview</h3>
+                    <p>
+                        Founded in 2010, Hi Tech has grown to become a trusted technology partner 
+                        for businesses across various industries. We specialize in software development, 
+                        digital transformation, and IT consulting services.
+                    </p>
+                    
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Custom Software Development</li>
+                        <li>Web and Mobile Applications</li>
+                        <li>Cloud Solutions</li>
+                        <li>IT Consulting</li>
+                        <li>Digital Transformation</li>
+                    </ul>
+
+                    <h3>Our Values</h3>
+                    <p>
+                        We are committed to delivering exceptional value through innovation, 
+                        integrity, and customer-centric approach. Our team of skilled professionals 
+                        works tirelessly to exceed client expectations and drive business success.
+                    </p>
+                </div>
+                
+                <div class="team-section">
+                    <h3>Our Headquarters</h3>
+                    <div class="headquarters-grid">
+                        <div class="hq-item">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FFD700'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='11' fill='%23333' text-anchor='middle' dy='.3em'%3EJakarta%3C/text%3E%3C/svg%3E" alt="Jakarta Office">
+                            <h4>Jakarta</h4>
+                            <p>Main Office</p>
+                        </div>
+                        <div class="hq-item">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FFD700'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='10' fill='%23333' text-anchor='middle' dy='.3em'%3ESurabaya%3C/text%3E%3C/svg%3E" alt="Surabaya Office">
+                            <h4>Surabaya</h4>
+                            <p>Branch Office</p>
+                        </div>
+                        <div class="hq-item">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FFD700'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='11' fill='%23333' text-anchor='middle' dy='.3em'%3EMedan%3C/text%3E%3C/svg%3E" alt="Medan Office">
+                            <h4>Medan</h4>
+                            <p>Regional Office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="message" class="message">
+        <div class="container">
+            <h2>Message Us</h2>
+            <p>Get in touch with us for any inquiries or business collaboration</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>Email</h4>
+                    <p>info@hitech.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>Phone</h4>
+                    <p>+62 21 1234 5678</p>
+                </div>
+                <div class="info-item">
+                    <h4>Address</h4>
+                    <p>Jl. Sudirman No. 123, Jakarta, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hi Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
